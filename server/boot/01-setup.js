@@ -10,12 +10,7 @@ var loopback = require('loopback');
 module.exports = function(server) {
 
 
-    server.use(serveStatic("client"));
-    // Only serve modules if we're not in production
-    if(process.env.NODE_ENV !== "production") {
-        server.use('/modules', serveStatic("modules"));
-    }
-
+    server.use(serveStatic(path.join("client", "dist")));
     server.set("view engine", "ejs");
     server.set("views", path.join(__dirname, "..", "views"));
 

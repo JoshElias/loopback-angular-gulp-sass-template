@@ -23,15 +23,15 @@ var loopbackAngular = require('gulp-loopback-sdk-angular');
 
 var srcDir = "client";
 var src = {
-    css: [srcDir + "/stylesheets/**/*.css"],
-    scss: [srcDir + "/stylesheets/**/*.scss"],
+    css: [srcDir + "/css/**/*.css"],
+    scss: [srcDir + "/css/**/*.scss"],
     js: [srcDir + "/js/**/*.js"]
 };
 
 var distDir = "client/dist";
 var dist = {
     all: [distDir + '/**/*'],
-    css: distDir + '/stylesheets/',
+    css: distDir + '/css/',
     js: distDir + '/js/',
     vendor: distDir + '/vendor/'
 };
@@ -102,7 +102,7 @@ gulp.task('watch', function() {
 
 
 gulp.task('concat-css', function() {
-    return gulp.src("client/dist/stylesheets/*.css")
+    return gulp.src("client/dist/css/*.css")
         .pipe(concat('style.css'))
         .pipe(gulp.dest(dist.css))
 });

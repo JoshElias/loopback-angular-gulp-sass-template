@@ -43,12 +43,14 @@
         "development": [
           "dist/js/bootstrap.js",
           "dist/css/bootstrap.css",
-          "dist/css/bootstrap-theme.css"
+          "dist/css/bootstrap-theme.css",
+          "dist/css/bootstrap-theme.css.map"
         ],
         "production": [
           "dist/js/bootstrap.min.js",
           "dist/css/bootstrap.min.css",
-          "dist/css/bootstrap-theme.min.css"
+          "dist/css/bootstrap-theme.min.css",
+          "dist/css/bootstrap-theme.min.css.map"
         ]
       }
     },
