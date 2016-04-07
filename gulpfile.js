@@ -20,6 +20,8 @@ var child = require('child_process');
 var fs = require('fs');
 var rename = require('gulp-rename');
 var loopbackAngular = require('gulp-loopback-sdk-angular');
+var sourcemaps = require('gulp-sourcemaps');
+
 
 var srcDir = "client";
 var src = {
@@ -61,7 +63,7 @@ gulp.task('install', function() {
 gulp.task('bower', function() {
     var jsFilter = gulpFilter('**/*.js', {restore: true});
     var cssFilter = gulpFilter('**/*.css', {restore: true});
-    return gulp.src(mainBowerFiles(), { base: "./client/vendors" })
+    return gulp.src(mainBowerFiles(), { base: "./client/vendors", sourcemaps: true })
         .pipe(jsFilter)
         .pipe(concat('vendor.js'))
         .pipe(gulp.dest(dist.js))
