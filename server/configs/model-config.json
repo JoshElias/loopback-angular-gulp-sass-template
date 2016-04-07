@@ -1,0 +1,33 @@
+{
+  "User": {
+    "dataSource": "mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "CoffeeShop": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Review": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Reviewer": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

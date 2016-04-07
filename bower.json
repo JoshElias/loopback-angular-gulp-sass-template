@@ -1,0 +1,80 @@
+{
+  "name": "template",
+  "description": "",
+  "main": "server/server.js",
+  "authors": [
+    "JoshElias <josh.elias.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JoshElias/muskoka",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "angular": "1.5.2",
+    "bootstrap": "^3.3.6",
+    "async": "^1.5.2",
+    "underscore": "^1.8.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-resource": "^1.5.3"
+  },
+  "overrides": {
+    "jquery": {
+      "main": {
+        "development": "dist/jquery.js",
+        "production": "dist/jquery.min.js"
+      }
+    },
+    "angular": {
+      "main": {
+        "development": "angular.js",
+        "production": "angular.min.js"
+      }
+    },
+    "bootstrap": {
+      "main": {
+        "development": [
+          "dist/js/bootstrap.js",
+          "dist/css/bootstrap.css",
+          "dist/css/bootstrap-theme.css"
+        ],
+        "production": [
+          "dist/js/bootstrap.min.js",
+          "dist/css/bootstrap.min.css",
+          "dist/css/bootstrap-theme.min.css"
+        ]
+      }
+    },
+    "async": {
+      "main": {
+        "development": "dist/async.js",
+        "production": "dist/async.min.js"
+      }
+    },
+    "underscore": {
+      "main": {
+        "development": "underscore.js",
+        "production": "underscore.min.js"
+      }
+    },
+    "angular-ui-router": {
+      "main": {
+        "development": "release/angular-ui-router.js",
+        "production": "release/angular-ui-router.minbower .js"
+      }
+    },
+    "angular-resource": {
+      "main": {
+        "development": "angular-resource.js",
+        "production": "angular-resource.min.js"
+      }
+    }
+  }
+}

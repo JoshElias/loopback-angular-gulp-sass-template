@@ -1,0 +1,13 @@
+{
+  "ids": {
+    "ManagerHost": 3,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "004f75a2-8e65-4722-81d6-e9d26942fab2": "{\"id\":\"004f75a2-8e65-4722-81d6-e9d26942fab2\",\"host\":\"localhost\",\"port\":8701,\"actions\":[\"delete\",\"edit\"],\"protocol\":\"http\",\"created\":1456044694670,\"error\":{\"message\":\"connect ECONNREFUSED 127.0.0.1:8701\"},\"errorType\":\"connection\",\"app\":null,\"processes\":null,\"$$hashKey\":\"object:133\",\"isHostProblem\":true}",
+      "52ab6010-b517-4097-89fe-d33fcc2512a9": "{\"id\":\"52ab6010-b517-4097-89fe-d33fcc2512a9\",\"host\":\"52.5.93.216\",\"port\":8701,\"actions\":[\"delete\",\"edit\",\"env-set\",\"env-get\",\"stop\",\"restart\",\"cluster-restart\",\"license-push\"],\"protocol\":\"http\",\"created\":1456047468706,\"error\":null,\"errorType\":null,\"app\":{\"name\":\"muskoka\",\"version\":null,\"port\":3001},\"processes\":{\"pids\":[{\"parentPid\":1956,\"pid\":1961,\"workerId\":1,\"listeningSockets\":[{\"addressType\":4,\"address\":\"0.0.0.0\",\"port\":3001}],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-02-21T09:42:38.608Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":3,\"serviceInstanceId\":1},{\"parentPid\":1834,\"pid\":1956,\"workerId\":0,\"listeningSockets\":[],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-02-21T09:42:38.281Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":4,\"serviceInstanceId\":1}]}}"
+    },
+    "LoadBalancer": {}
+  }
+}
