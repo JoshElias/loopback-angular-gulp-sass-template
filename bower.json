@@ -67,7 +67,7 @@
     "angular-ui-router": {
       "main": {
         "development": "release/angular-ui-router.js",
-        "production": "release/angular-ui-router.minbower .js"
+        "production": "release/angular-ui-router.min.js"
       }
     },
     "angular-resource": {
